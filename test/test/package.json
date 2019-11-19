@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=8.3.0"
+  },
+  "scripts": {
+    "start": "wordup start || true",
+    "build": "wordup export",
+    "postinstall": "wordup install || true"
+  }
+}

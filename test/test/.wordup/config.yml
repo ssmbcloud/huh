@@ -1,0 +1,31 @@
+# This is the wordup config:
+# - You can customize two things here: 
+# - Your wordup specific config and the config of your WordPress installation
+# Documentation: https://docs.wordup.dev
+
+# A wordup project is either of type 'plugins', 'themes' or 'installation'
+type: installation
+ 
+# The internal project name 
+projectName: test
+
+# The slug of your project. CAUTION: You have to reinstall your dev server, when you change the slug.
+slug: test
+
+
+# WordPress installation config 
+wpInstall:
+  title: test
+  plugins:
+    advanced-custom-fields: latest
+    contact-form-7: latest
+    query-monitor: latest
+    wp-graphql: https://github.com/wp-graphql/wp-graphql/archive/master.zip
+  themes: {}
+  users:
+    - name: admin
+      password: "123456"
+      email: ssmb.cloud@gmail.ccom
+      role: administrator
+
+
